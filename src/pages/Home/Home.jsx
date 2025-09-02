@@ -9,7 +9,7 @@ function Home() {
      
       <Hero></Hero>
       <Marque></Marque>
-      {/* <About></About> */}
+      <About></About>
      
     </>
   )
