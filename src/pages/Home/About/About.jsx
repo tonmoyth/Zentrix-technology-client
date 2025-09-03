@@ -1,6 +1,7 @@
 import React from "react";
 import userIcon from "../../../assets/user.png"
 import { FaUsers } from "react-icons/fa";
+import Carousel from "../Caruasel/Carousel";
 function About() {
 
     return (
@@ -9,7 +10,7 @@ function About() {
                 <div className=" md:w-11/12 mx-auto grid grid-cols-1 gap-6 lg:grid-cols-2 items-center">
                     {/* Left Side Images */}
                     <div className="flex flex-col items-center space-y-6 relative">
-                        <div className="flex relative">
+                        {/* <div className="flex relative">
                             <div className="rounded-2xl overflow-hidden rounded-tr-4xl w-40 sm:w-60 lg:w-60 h-56">
                                 <img
                                     src="https://i.ibb.co.com/99PmSbDT/About-Us1.png"
@@ -24,15 +25,18 @@ function About() {
                                     className="w-full h-full object-cover rounded-br-4xl overflow-hidden transition duration-300 transform hover:scale-105"
                                 />
                             </div>
-                        </div>
+                        </div> */}
+
+                        {/* slider */}
+                        <Carousel></Carousel>
 
                         {/* Employees Box */}
-                        <div className="bg-white rounded-2xl shadow-2xl px-6 py-4 flex items-center space-x-3 absolute top-60 left-20 md:top-66 md:left-70 lg:top-66 lg:left-60 ">
+                        {/* <div className="bg-white rounded-2xl shadow-2xl px-6 py-4 flex items-center space-x-3 absolute top-60 left-20 md:top-66 md:left-70 lg:top-66 lg:left-60 ">
                             <div className="text-[var(--secondary)] w-8 text-2xl"><FaUsers size={30}/></div>
                             <div className="ml-4">
                                 <h4 className="md:text-lg font-bold">1100+ <br /> Employees</h4>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Right Side Text */}
