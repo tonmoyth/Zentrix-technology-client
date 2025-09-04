@@ -5,6 +5,7 @@ import Marque from "./Marque/Marque"
 import Logomarquee from "../Home/logomarquee/Logomarquee"
 import Projects from "./Projects/Projects"
 import WhyChoose from "./WhyChoose/WhyChoose"
+import Testimonial2 from "./Testomonial/Testomonial"
 
 function Home() {
 
@@ -14,9 +15,10 @@ function Home() {
       <Hero></Hero>
       <Marque></Marque>
       <About></About>
-      <Logomarquee></Logomarquee>
      <Projects></Projects>
      <WhyChoose></WhyChoose>
+     <Logomarquee></Logomarquee>
+     <Testimonial2></Testimonial2>
       <Footer2></Footer2>
      
     </>

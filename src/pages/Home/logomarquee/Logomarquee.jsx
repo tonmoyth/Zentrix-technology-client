@@ -122,7 +122,7 @@ function Logomarquee() {
     </div>;
   };
   return <div className="items-center overflow-hidden">
-    <div className="w-10/12 mx-auto pb-20 flex flex-col gap-y-6">\
+    <div className="w-10/12 mx-auto pb-20 flex flex-col gap-y-6">
       <h1 className="text-2xl md:text-4xl lg:text-5xl text-center mb-4 font-bold 
                bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
         Our Client

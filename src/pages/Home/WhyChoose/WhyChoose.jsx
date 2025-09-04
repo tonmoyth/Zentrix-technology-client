@@ -5,7 +5,7 @@ function WhyChoose() {
   return (
     <>
      
-       <div className="px-4 py-16 mx-auto  md:px-24 lg:px-8 lg:py-20">
+       <div className="px-4  mx-auto  md:px-24 lg:px-8 mb-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:w-10/12 mx-auto overflow-hidden bg-white rounded lg:flex-row sm:mx-auto">
         {/* <div className="relative lg:w-1/2">
           <img
@@ -27,7 +27,7 @@ function WhyChoose() {
         </div>
 
 
-        <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 ">
+        <div className="flex flex-col justify-center p-8 bg-white  ">
           <div>
             <h4 className="text-[var(--secondary)] font-semibold mb-2 uppercase">
                            Why Choose us
@@ -49,20 +49,9 @@ function WhyChoose() {
             >
               Get started
             </button> */}
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn More
-              <svg
-                className="inline-block w-3 ml-2"
-                fill="currentColor"
-                viewBox="0 0 12 12"
-              >
-                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-              </svg>
-            </a>
+            <button className="btn px-8 py-6 rounded-full text-white bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] border-0 hover:opacity-90">
+                                Learn More
+                            </button>
           </div>
         </div>
       </div>

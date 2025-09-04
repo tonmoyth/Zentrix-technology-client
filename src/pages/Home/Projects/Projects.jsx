@@ -32,7 +32,7 @@ export default function Projects() {
                         <FaStarOfDavid size={22} />
                     </motion.div>
                 </motion.div>
-                <h4 className="text-[var(--text)] mt-3  text-center font-semibold mb-2 uppercase">
+                <h4 className="text-[var(--secondary)] mt-3  text-center font-semibold mb-2 uppercase">
                     Our Projects
                 </h4>
             </div>
