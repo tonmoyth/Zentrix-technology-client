@@ -47,20 +47,20 @@ function Hero() {
                     </motion.div>
 
                     <motion.div
-                        className='absolute top-87 right-80 z-20'
+                        className='absolute top-97 right-80 z-20'
                         animate={{ y: [0, -15, 0] }}
                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                     >
                         <IoHardwareChip className='text-[var(--primary)]' size={40} />
                     </motion.div>
 
-                    <motion.div
+                    {/* <motion.div
                         className="absolute top-50 right-170 z-20"
                         animate={{ y: [0, -20, 0] }}
                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0 }}
                     >
                         <ImMobile2 className="text-[var(--secondary)]" size={40} />
-                    </motion.div>
+                    </motion.div> */}
 
                     <motion.div
                         className="absolute bottom-100 right-180 z-20"
@@ -71,7 +71,7 @@ function Hero() {
                     </motion.div>
 
                     <motion.div
-                        className="absolute bottom-60 left-180 z-20"
+                        className="absolute bottom-60 lg:left-180 z-20"
                         animate={{ y: [0, -20, 0] }}
                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                     >
