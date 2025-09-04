@@ -14,7 +14,7 @@ import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 
 export default function Projects() {
     return (
-        <div className="w-10/12 mx-auto mb-20">
+        <div className="w-11/12  md:w-10/12 mx-auto mb-20">
             <div className='flex gap-2 items-center justify-center'>
                 <motion.div
                     initial={{ scale: 0.6, rotate: -30, opacity: 0 }}

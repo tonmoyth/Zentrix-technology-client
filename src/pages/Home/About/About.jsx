@@ -7,7 +7,7 @@ function About() {
     return (
         <>
             <section className="py-20 px-6">
-                <div className=" md:w-11/12 mx-auto grid grid-cols-1 gap-6 lg:grid-cols-2 items-center">
+                <div className=" md:w-11/12 lg:w-10/12 lg:h-10/12 mx-auto grid grid-cols-1 gap-6 lg:grid-cols-2 items-center">
                     {/* Left Side Images */}
                     <div className="flex flex-col items-center space-y-6 relative">
                         {/* <div className="flex relative">

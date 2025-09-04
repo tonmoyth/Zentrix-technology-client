@@ -5,8 +5,8 @@ function WhyChoose() {
   return (
     <>
      
-       <div className="px-4  mx-auto  md:px-24 lg:px-8 mb-20">
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:w-10/12 mx-auto overflow-hidden bg-white rounded lg:flex-row sm:mx-auto">
+       <div className="mb-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 w-11/12 md:w-10/12 mx-auto overflow-hidden bg-white rounded lg:flex-row sm:mx-auto">
         {/* <div className="relative lg:w-1/2">
           <img
             src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
@@ -27,7 +27,7 @@ function WhyChoose() {
         </div>
 
 
-        <div className="flex flex-col justify-center p-8 bg-white  ">
+        <div className="flex flex-col justify-center bg-white  ">
           <div>
             <h4 className="text-[var(--secondary)] font-semibold mb-2 uppercase">
                            Why Choose us

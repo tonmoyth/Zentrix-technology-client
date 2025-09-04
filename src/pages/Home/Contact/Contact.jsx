@@ -42,16 +42,16 @@ function Contact() {
 
     return (
         <>
-            <section id="contact" className="pb-10 lg:pb-12 space-y-6">
+            <section id="contact" className="w-11/12 md:w-10/12  mx-auto mb-20 space-y-6">
                 <div className="text-center mb-8">
                     <span className="font-semibold text-[var(--secondary)]">Contact</span>
                     <h2 className="text-2xl lg:text-4xl font-bold  uppercase bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
                         Contact with me
                     </h2>
                 </div>
-                <div className="grid overflow-hidden md:w-11/12 grid-cols-1 gap-4 mx-auto md:grid-cols-2 ">
+                <div className="grid overflow-hidden grid-cols-1 justify-between gap-8 mx-auto md:grid-cols-2 ">
                     <section className="rounded-xl ">
-                        <div className="w-11/12 mx-auto ">
+                        <div className="">
                             <h2 className="text-2xl lg:text-4xl font-bold mb-2">
                                 Let’s talk about your project
                             </h2>
@@ -106,7 +106,7 @@ function Contact() {
                     <form
                     ref={form}
                         onSubmit={sendEmail}
-                        className="flex w-11/12 mx-auto flex-col p-6 bg-black text-white space-y-6 rounded-lg"
+                        className="flex flex-col p-6 border border-gray-200 transition-all space-y-6 rounded-lg"
                     >
                         <label className="block">
                             <span className="mb-1">Full name</span>

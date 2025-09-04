@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router";
 import zentrixImage from "../../../public/color-zentrix.png"
+import Manu from "../Manu/Manu";
 
 // import {
 //     Menubar,
@@ -69,12 +70,16 @@ function NavBer() {
         <>
             <div className={`navbar w-11/12 md:w-10/12 mx-auto items-center`}>
                 <div className="flex-1">
-                    <Link ><img className="w-12 md:w-18 lg:w-26" src={zentrixImage} alt="" /></Link>
+                    <Link ><img className="w-18 md:w-18 lg:w-26" src={zentrixImage} /></Link>
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1 hidden md:flex">
                         {links}
                     </ul>
+
+                    <div className=" flex justify-end">
+                        <Manu></Manu>
+                    </div>
 
                     {/* mobile device icon */}
                     {/* <div className="md:hidden">
