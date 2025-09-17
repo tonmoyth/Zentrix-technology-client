@@ -1,4 +1,4 @@
-import menuImage from "../../../public/manu.png"
+
 import React, { useState, useEffect, useRef, ReactNode } from "react";
 import { RiApps2AiLine } from "react-icons/ri";
 import { FaHome } from "react-icons/fa";
@@ -85,7 +85,7 @@ const DropdownMenuItem = ({
   </a>;
 const DropdownMenuSeparator = () => <div className="my-2 h-px bg-zinc-200 dark:bg-zinc-700" />;
 export default function Dropdown() {
-  return <div className=" flex items-center justify-center font-sans p-8 md:hidden">
+  return <div className=" flex items-center justify-center font-sans p-2 lg:p-8 md:hidden">
       <DropdownMenu trigger={<button className=" text-sm font-semibold rounded-lg transition-colors">
             <RiApps2AiLine size={40}/>
             {/* <TiThMenu size={35}/> */}

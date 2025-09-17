@@ -89,15 +89,13 @@ function Testimonial2() {
   const anonymousFallbackImage = "https://placehold.co/48x48/6B7280/FFFFFF?text=AA";
   return <div className="font-sans flex flex-col items-center mb-20">
       {}
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center max-w-4xl leading-tight mb-4">
-        Loved by community
-      </h1>
+       <h2 className="text-2xl lg:text-4xl font-bold mb-4  uppercase bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
+                        Loved by community
+                    </h2>
+      
 
       {}
-      <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 text-center max-w-3xl mb-8">
-        Harum quae dolore corrupti aut temporibus pariatur.
-      </p>
-
+      
       {}
       <div className="w-11/12 md:w-10/12 mx-auto columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
 

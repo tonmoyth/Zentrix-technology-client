@@ -70,7 +70,7 @@ function NavBer() {
         <>
             <div className={`navbar w-11/12 md:w-10/12 mx-auto items-center`}>
                 <div className="flex-1">
-                    <Link ><img className="w-18 md:w-18 lg:w-26" src={zentrixImage} /></Link>
+                    <Link ><img className="w-16 md:w-18 lg:w-26" src={zentrixImage} /></Link>
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1 hidden md:flex">
