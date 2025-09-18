@@ -1,7 +1,7 @@
 
 import React from "react";
 import footerLogo from "../../../../public/footerIcon.png"
-function Footer2() {
+function Footer() {
     const navLinks = [{
         name: "Products",
         href: "#"
@@ -91,4 +91,4 @@ function Footer2() {
         </div>
     </footer>;
 }
-export default Footer2;
+export default Footer;

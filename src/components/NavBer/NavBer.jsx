@@ -50,7 +50,7 @@ function NavBer() {
                     Products
                 </NavLink>
             </li>
-            <li>
+            {/* <li>
                 <NavLink
                     to="/about"
                     className={({ isActive }) =>
@@ -59,7 +59,7 @@ function NavBer() {
                 >
                     About
                 </NavLink>
-            </li>
+            </li> */}
 
 
         </>

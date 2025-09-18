@@ -36,7 +36,7 @@ export default function Projects() {
                     Our Projects
                 </h4>
             </div>
-            <h1 className="text-2xl md:text-4xl lg:text-5xl text-center mb-8 font-bold 
+            <h1 className="text-2xl md:text-4xl uppercase text-center mb-8 font-bold 
                bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
                 Featured projects we’re <br />
                 <span className='block mt-1'>proud to sharee</span>

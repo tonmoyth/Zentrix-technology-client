@@ -96,6 +96,7 @@ function Logomarquee({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+     
       <div
         ref={contentRef}
         className={cn(
@@ -103,6 +104,7 @@ function Logomarquee({
             (vertical ? " flex-col" : " flex-row")
         )}
       >
+        
         {Array(repeat)
           .fill(0)
           .map((_, i) => (
