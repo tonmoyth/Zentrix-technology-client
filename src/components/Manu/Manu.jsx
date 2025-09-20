@@ -104,6 +104,21 @@ export default function Dropdown() {
             </span>
           </DropdownMenuItem>
           <DropdownMenuItem onClick={() => console.log("Settings clicked")}>
+            <FaServicestack className="text-zinc-500 mr-4" size={25}/>
+            
+            <span>
+
+               <NavLink
+                    to="/career"
+                    className={({ isActive }) =>
+                        isActive ? "text-[var(--secondary)] font-bold" : "font-bold text-[var(--text)] hover:text-[var(--secondary)]"
+                    }
+                >
+                    Career
+                </NavLink>
+            </span>
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={() => console.log("Settings clicked")}>
             
             <TbDetails className="text-zinc-500 mr-4" size={25}/>
             <span>About</span>

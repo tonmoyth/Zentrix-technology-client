@@ -61,14 +61,14 @@ export default function ServicesTabs() {
 
   return (
     <div>
-      <div className="w-11/12 md:w-10/12 mx-auto pt-26 min-h-[100vh]">
-        <h2 className="text-2xl text-center lg:text-4xl font-bold mb-4  uppercase bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
+      <div className="w-11/12 md:w-10/12 mx-auto pt-26 mb-20">
+        <h2 className="text-2xl text-center lg:text-4xl font-bold mb-6  uppercase bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
           Our service
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-6 rounded-xl overflow-hidden">
           {/* Sidebar Tabs */}
-          <div className="sm:w-90 flex flex-col rounded-xl bg-black/5 dark:bg-white/5 backdrop-filter backdrop-blur-lg">
+          <div className="sm:w-90 flex flex-col rounded-xl bg-[var(--secondary-low)] dark:bg-white/5 backdrop-filter backdrop-blur-lg">
             {tabs.map((tab) => (
               <button
                 key={tab.id}

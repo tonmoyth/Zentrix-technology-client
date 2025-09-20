@@ -111,7 +111,7 @@ function Logomarquee({
             <div
               key={i}
               ref={i === 0 ? singleContentBlockRef : null}
-              className="flex gap-8"
+              className="flex gap-20"
             >
               {children}
             </div>

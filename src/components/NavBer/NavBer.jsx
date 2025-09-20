@@ -50,6 +50,16 @@ function NavBer() {
                     Products
                 </NavLink>
             </li>
+            <li>
+                <NavLink
+                    to="/career"
+                    className={({ isActive }) =>
+                        isActive ? "text-[var(--secondary)] font-bold" : "font-bold text-[var(--text)] hover:text-[var(--secondary)]"
+                    }
+                >
+                    Career
+                </NavLink>
+            </li>
             {/* <li>
                 <NavLink
                     to="/about"

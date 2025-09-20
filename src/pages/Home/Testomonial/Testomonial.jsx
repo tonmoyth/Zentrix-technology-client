@@ -99,7 +99,7 @@ function Testimonial2() {
       {}
       <div className="w-11/12 md:w-10/12 mx-auto columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
 
-        {testimonials.map((testimonial, index) => <div key={index} className="bg-[var(--text)] p-6 rounded-xl shadow-md break-inside-avoid border-gray-200 dark:border-gray-800">
+        {testimonials.map((testimonial, index) => <div  key={index} className="bg-[var(--secondary-low)] p-6 rounded-xl shadow-md break-inside-avoid border-gray-200 dark:border-gray-800">
             <div className="flex items-center mb-4">
               <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full object-cover mr-4" onError={e => {
             const target = e.target;

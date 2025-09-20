@@ -4,6 +4,7 @@ import { createBrowserRouter } from "react-router";
 import Home from "../pages/Home/Home";
 import Products from "../pages/Products/Products";
 import Services from "../pages/Services/Services";
+import Career from "../pages/Career/Career";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
         {
           path: 'service',
           Component: Services
+        },
+        {
+          path: 'career',
+          Component:Career
         }
     ]
   },

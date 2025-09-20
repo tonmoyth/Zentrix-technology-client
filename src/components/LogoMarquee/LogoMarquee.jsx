@@ -14,7 +14,7 @@ export default function LogoMarquee() {
   const {pathname} = useLocation();
   return (
     <div>
-      <h2 className="text-2xl text-center lg:text-4xl font-bold mb-4  uppercase bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
+      <h2 className="text-2xl text-center lg:text-4xl font-bold mb-6  uppercase bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
         {pathname === '/service' ? 'TRUSTED BY' : 'Our Client'}
         
       </h2>

@@ -29,7 +29,7 @@ export default function WhyChoose() {
       <div className="  grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
-             <h2 className="text-2xl  lg:text-4xl font-bold mb-4  uppercase bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
+             <h2 className="text-2xl  lg:text-4xl font-bold mb-6  uppercase bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
           Why Choose{" "}
             Zentrix Technology 
         </h2>
