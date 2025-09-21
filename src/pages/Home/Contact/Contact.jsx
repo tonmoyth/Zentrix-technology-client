@@ -5,6 +5,7 @@ import { Link } from "react-router"
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
+import Map from "../Map/Map";
 
 function Contact() {
     const [loading,setLoading] = useState(false);
@@ -42,7 +43,8 @@ function Contact() {
 
     return (
         <>
-            <section id="contact" className="w-11/12 md:w-10/12  mx-auto mb-20 space-y-6">
+            <div className="bg-gradient-to-b from-gray-200 to-[#fff]">
+                <section id="contact" className="w-11/12 md:w-10/12  mx-auto py-20 space-y-6 ">
                 <div className="text-center mb-8">
                     <span className="font-semibold text-[var(--secondary)]">Contact</span>
                     <h2 className="text-2xl lg:text-4xl font-bold  uppercase bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
@@ -50,59 +52,11 @@ function Contact() {
                     </h2>
                 </div>
                 <div className="grid overflow-hidden grid-cols-1 justify-between gap-8 mx-auto md:grid-cols-2 ">
-                    <section className="rounded-xl ">
-                        <div className="">
-                            <h2 className="text-2xl lg:text-4xl font-bold mb-2">
-                                Let’s talk about your project
-                            </h2>
-                            <p className="mb-6">
-                                I’m currently available for new projects. Contact me to discuss
-                                your web development needs.
-                            </p>
+                    {/* map section */}
+                    <Map></Map>
 
-                            <div className="space-y-4 text-left">
-                                <p className="flex items-center gap-3">
-                                    <IoLocationSharp className="text-[var(--secondary)] text-xl" />
-                                    Bhabanipur, Gazipur, Dhaka, Bangladesh
-                                </p>
-                                <p className="flex items-center gap-3">
-                                    <FiPhone className="text-[var(--secondary)] text-xl" />
-                                    +880 1407641417
-                                </p>
-                                <p className="flex items-center gap-3">
-                                    <FiMail className="text-[var(--secondary)] text-xl" />
-                                    tonmoynht1930@gmail.com
-                                </p>
-                            </div>
 
-                            <div className="mt-6 flex  gap-4 text-2xl">
-                                <Link
-                                    to="https://www.facebook.com/nurislamhasantonmoyth"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="hover:text-[var(--secondary)]"
-                                >
-                                    <FaFacebookF />
-                                </Link>
-                                <Link
-                                    to="https://github.com/tonmoyth"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="hover:text-[var(--secondary)]"
-                                >
-                                    <FaGithub />
-                                </Link>
-                                <Link
-                                    to="https://www.linkedin.com/in/nurislam-hasan-tonmoy-88b1bb368/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="hover:text-[var(--secondary)]"
-                                >
-                                    <FaLinkedinIn />
-                                </Link>
-                            </div>
-                        </div>
-                    </section>
+                    {/* form section */}
                     <form
                     ref={form}
                         onSubmit={sendEmail}
@@ -155,6 +109,7 @@ function Contact() {
                     </form>
                 </div>
             </section>
+            </div>
 
         </>
     )

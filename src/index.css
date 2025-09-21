@@ -12,7 +12,7 @@
   --text: #777777;
   --primary: #0E47A1;
   --secondary: #24C4F4;
-  --secondary-low: rgba(36, 196, 244,0.1);
+  --secondary-low: rgba(36, 196, 244, 0.3);
 }
 
 /* :root[data-theme="dark"] {

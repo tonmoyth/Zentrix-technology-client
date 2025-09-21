@@ -53,7 +53,7 @@ function Footer() {
         </svg>
     }];
 
-    return <footer className="py-10 px-4 sm:px-6 lg:px-8 font-inter bg-gradient-to-b from-[#24C4F4] to-[#0E47A1] relative overflow-hidden ">
+    return <footer className="py-10 px-4 sm:px-6 lg:px-8 font-inter bg-[#0E47A1]  relative overflow-hidden ">
         <div className="max-w-7xl mx-auto flex flex-col items-center relative z-10">
             <div className=" flex items-center justify-center">
                 <img

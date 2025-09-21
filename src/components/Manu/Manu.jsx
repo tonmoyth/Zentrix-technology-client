@@ -118,11 +118,11 @@ export default function Dropdown() {
                 </NavLink>
             </span>
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => console.log("Settings clicked")}>
+          {/* <DropdownMenuItem onClick={() => console.log("Settings clicked")}>
             
             <TbDetails className="text-zinc-500 mr-4" size={25}/>
             <span>About</span>
-          </DropdownMenuItem>
+          </DropdownMenuItem> */}
         </div>
        
         

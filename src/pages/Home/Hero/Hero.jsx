@@ -9,6 +9,12 @@ import { useEffect, useState } from 'react';
 import SlideInView from '../../../components/SlideInText/SlideInText';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router';
+
+import iconOne from '../../../assets/bitcoin-01.png'
+import iconTwo from '../../../assets/bitcoin-02.png'
+import iconFour from '../../../assets/circle-02.png'
+import iconFive from '../../../assets/ethereum-01.png'
 
 function Hero() {
 
@@ -34,7 +40,7 @@ function Hero() {
                     className="hero min-h-screen"
                     style={{
                         backgroundImage:
-                            "url(https://i.ibb.co.com/gFJXJTgp/Desktop-1.png)",
+                            "url(https://i.ibb.co.com/sLnp8WQ/new.png)",
                     }}
                 >
                     {/* icon */}
@@ -43,7 +49,8 @@ function Hero() {
                         animate={{ y: [0, -15, 0] }}
                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                     >
-                        <SlEarphones className='text-[var(--secondary)]' size={40} />
+                        <img className='w-10' src={iconOne}  />
+                        {/* <SlEarphones className='text-[var(--secondary)]' size={40} /> */}
                     </motion.div>
 
                     <motion.div
@@ -51,7 +58,7 @@ function Hero() {
                         animate={{ y: [0, -15, 0] }}
                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                     >
-                        <IoHardwareChip className='text-[var(--primary)]' size={40} />
+                      <img className='w-10' src={iconTwo}  />
                     </motion.div>
 
                     {/* <motion.div
@@ -67,7 +74,7 @@ function Hero() {
                         animate={{ y: [0, -20, 0] }}
                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                     >
-                        <GrCloudSoftware className="text-[var(--secondary)]" size={40} />
+                         <img className='w-10' src={iconFour}  />
                     </motion.div>
 
                     <motion.div
@@ -75,14 +82,14 @@ function Hero() {
                         animate={{ y: [0, -20, 0] }}
                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                     >
-                        <FaConnectdevelop className="text-[var(--primary)]" size={40} />
+                         <img className='w-10' src={iconFive}  />
                     </motion.div>
 
 
-                    <div className="hero-overlay bg-white/75 z-10"></div>
+                    <div className="hero-overlay bg-white/60 z-10"></div>
                     <div className="hero-content text-neutral-content text-center z-20">
                         <div >
-                            <h1 className="mb-5 text-2xl text-black md:text-5xl lg:text-6xl font-bold">
+                            <h1 className=" text-2xl text-black md:text-5xl lg:text-6xl font-bold">
                                 Technology Simplified <br />
                                 <span className="block mt-2 font-semibold bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
                                     <TypeAnimation
@@ -105,12 +112,14 @@ function Hero() {
 
 
                             {/* <SlideInView></SlideInView> */}
-                            <p className="mb-4 w-9/12 mx-auto text-[var(--text)]">
+                            <p className="mb-4 w-9/12 mx-auto text-black ">
                                 We build smart, reliable, and user-friendly software solutions that help your business grow faster and smarter.
                             </p>
-                            <button className="btn px-8 py-6 rounded-full text-white bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] border-0 hover:opacity-90">
+                            <Link to="/service">
+                            <button className="btn px-8 py-6 mt-6 rounded-full text-white bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] border-0 hover:opacity-90">
                                 Get Started
                             </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

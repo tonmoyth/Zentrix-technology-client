@@ -25,8 +25,8 @@ export default function WhyChoose() {
   ];
 
   return (
-    <section className="relative mb-20  w-11/12 md:w-10/12 mx-auto  overflow-hidden">
-      <div className="  grid md:grid-cols-2 gap-12 items-center">
+    <section className="relative mb-20 overflow-hidden bg-[var(--secondary-low)] py-8">
+      <div className=" w-11/12 md:w-10/12 mx-auto  grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
              <h2 className="text-2xl  lg:text-4xl font-bold mb-6  uppercase bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">

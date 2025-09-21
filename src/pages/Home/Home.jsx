@@ -5,21 +5,25 @@ import Projects from "./Projects/Projects"
 import Testimonial2 from "./Testomonial/Testomonial"
 import Contact from "./Contact/Contact"
 import LogoMarquee from "../../components/LogoMarquee/LogoMarquee"
-import Map from "./Map/Map"
+import { Helmet } from "react-helmet-async"
+// import Map from "./Map/Map"
 
 function Home() {
 
   return (
     <>
-     
+     <Helmet>
+        <title>Home</title>
+      </Helmet>
       <Hero></Hero>
-      <Marque></Marque>
       <About></About>
      <Projects></Projects>
      <LogoMarquee></LogoMarquee>
-     <Testimonial2></Testimonial2>
-     <Map></Map>
+     
+     {/* <Map></Map> */}
      <Contact></Contact>
+     <Testimonial2></Testimonial2>
+      <Marque></Marque>
      
      
     </>

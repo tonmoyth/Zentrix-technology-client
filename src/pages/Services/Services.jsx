@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  FaBullhorn,
-  FaMobileAlt,
-  FaHandsHelping,
-  FaDesktop,
-} from "react-icons/fa";
+import { FaBullhorn, FaMobileAlt, FaHandsHelping, FaDesktop, FaCubes, FaVideo } from "react-icons/fa";
 import LogoMarquee from "../../components/LogoMarquee/LogoMarquee";
 import WhyChoose from "../../components/WhyChoose/WhyChoose";
+import { Helmet } from "react-helmet-async";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 export default function ServicesTabs() {
   const [activeTab, setActiveTab] = useState(1);
@@ -28,8 +27,11 @@ export default function ServicesTabs() {
       id: 1,
       name: "Digital Marketing",
       icon: <FaBullhorn />,
-      image:
+      images: [
         "https://i.ibb.co.com/nMnmHw0t/digital-marketing-with-icons-business-people-1.jpg",
+        "/services/digital-marketing-2.jpg",
+        "/services/digital-marketing-3.jpg",
+      ],
       content:
         "Grow your business with SEO, social media campaigns, and data-driven marketing strategies.",
     },
@@ -37,7 +39,11 @@ export default function ServicesTabs() {
       id: 2,
       name: "Mobile App Development",
       icon: <FaMobileAlt />,
-      image: "/services/mobile-app.jpg",
+      images: [
+        "/services/mobile-app.jpg",
+        "/services/mobile-app-2.jpg",
+        "/services/mobile-app-3.jpg",
+      ],
       content:
         "We build scalable and user-friendly mobile applications for both iOS and Android platforms.",
     },
@@ -45,7 +51,10 @@ export default function ServicesTabs() {
       id: 3,
       name: "Business Support",
       icon: <FaHandsHelping />,
-      image: "/services/business-support.jpg",
+      images: [
+        "/services/business-support.jpg",
+        "/services/business-support-2.jpg",
+      ],
       content:
         "We provide reliable business support solutions to help you manage and optimize operations.",
     },
@@ -53,14 +62,44 @@ export default function ServicesTabs() {
       id: 4,
       name: "Hardware",
       icon: <FaDesktop />,
-      image: "/services/hardware.jpg",
+      images: [
+        "/services/hardware.jpg",
+        "/services/hardware-2.jpg",
+      ],
       content:
         "Providing quality hardware and IT infrastructure to ensure smooth operations for your business.",
+    },
+    {
+      id: 5,
+      name: "3D Product Modeling",
+      icon: <FaCubes />,
+      images: [
+        "/services/3d-modeling-1.jpg",
+        "/services/3d-modeling-2.jpg",
+        "/services/3d-modeling-3.jpg",
+      ],
+      content:
+        "Create realistic and interactive 3D product models to showcase your products in the best light.",
+    },
+    {
+      id: 6,
+      name: "2D Explainer Video",
+      icon: <FaVideo />,
+      images: [
+        "/services/2d-explainer-1.jpg",
+        "/services/2d-explainer-2.jpg",
+      ],
+      content:
+        "Engaging 2D explainer videos to simplify complex ideas and capture audience attention.",
     },
   ];
 
   return (
     <div>
+      <Helmet>
+        <title>Service</title>
+
+      </Helmet>
       <div className="w-11/12 md:w-10/12 mx-auto pt-26 mb-20">
         <h2 className="text-2xl text-center lg:text-4xl font-bold mb-6  uppercase bg-gradient-to-l from-[#24C4F4] to-[#0E47A1] bg-clip-text text-transparent">
           Our service
@@ -75,11 +114,10 @@ export default function ServicesTabs() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`
                 relative group flex items-center w-full px-4 py-3 sm:py-4 transition-all
-                ${
-                  activeTab === tab.id
+                ${activeTab === tab.id
                     ? "text-white"
                     : "text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300"
-                }
+                  }
               `}
               >
                 {/* Active Background */}
@@ -116,7 +154,7 @@ export default function ServicesTabs() {
           </div>
 
           {/* Content Area */}
-          <div className="flex-1 relative rounded-xl bg-white/80 dark:bg-gray-900/80 backdrop-filter backdrop-blur-lg shadow-lg overflow-hidden">
+          <div className="flex-1 relative rounded-xl bg-white/80 dark:bg-gray-900/80 backdrop-filter backdrop-blur-lg shadow-md overflow-hidden">
             {/* Loading Effect */}
             <AnimatePresence>
               {isLoading && (
@@ -169,12 +207,21 @@ export default function ServicesTabs() {
                   <span>{tabs.find((t) => t.id === activeTab)?.name}</span>
                 </h3>
 
-                {/* ✅ Image */}
-                <img
-                  src={tabs.find((t) => t.id === activeTab)?.image}
-                  alt={tabs.find((t) => t.id === activeTab)?.name}
-                  className="w-full h-40 object-cover rounded-lg mb-4 shadow"
-                />
+                {/* ✅ Image Slider */}
+                <Swiper modules={[Autoplay]} autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }} spaceBetween={10} slidesPerView={1} loop={true}>
+                  {tabs.find((t) => t.id === activeTab)?.images?.map((img, index) => (
+                    <SwiperSlide key={index}>
+                      <img
+                        src={img}
+                        alt={`slide-${index}`}
+                        className="w-full h-40 object-cover rounded-lg mb-4 shadow"
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
 
                 {/* ✅ Text */}
                 <p className="text-gray-600 dark:text-gray-300">
@@ -189,16 +236,16 @@ export default function ServicesTabs() {
         </div>
       </div>
 
-      {/* trusted by */}
-
-
-      {/* logo marquee */}
-     <div className="mt-20 md:mt-0">
-         <LogoMarquee></LogoMarquee>
-     </div>
 
       {/* why choose */}
       <WhyChoose></WhyChoose>
+
+      {/* logo marquee */}
+      <div className="mt-20 md:mt-0">
+        <LogoMarquee></LogoMarquee>
+      </div>
+
+
     </div>
   );
 }
